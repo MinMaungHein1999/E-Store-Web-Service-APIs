@@ -1,0 +1,577 @@
+{
+	"info": {
+		"_postman_id": "945a81b7-674f-4eaa-939d-608d6d6436a4",
+		"name": "E Store API Collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Customer",
+			"item": [
+				{
+					"name": "get All Customers",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJtaW5fbXlhdF9oZWluIiwiaWF0IjoxNjg1ODc0NzU2LCJleHAiOjE2ODU5NjExNTZ9.PbsKnRA6w4gXmJUDAvE5u8M0Ajmke6BHoxLXnkk6V_c",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/customers",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"customers"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "find Customer By Id",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJtaW5fbXlhdF9oZWluIiwiaWF0IjoxNjg1ODc0NzU2LCJleHAiOjE2ODU5NjExNTZ9.PbsKnRA6w4gXmJUDAvE5u8M0Ajmke6BHoxLXnkk6V_c",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/customers/find/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"customers",
+								"find",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Upadate By Customer Id",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJtaW5fbXlhdF9oZWluIiwiaWF0IjoxNjg1ODcxNTkwLCJleHAiOjE2ODU5NTc5OTB9.2Begxa4oKUH_Pst73KigRAhjoXX3aOZcZ5-3rCnh5c4",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": " {\n        \"name\": \"Zeo Linn\",\n        \"phoneNo\": \"0957190998\",\n        \"maxVoucherLimit\": 6\n }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/customers/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"customers",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "create Customers",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJtaW5fbXlhdF9oZWluIiwiaWF0IjoxNjg1ODcxNTkwLCJleHAiOjE2ODU5NTc5OTB9.2Begxa4oKUH_Pst73KigRAhjoXX3aOZcZ5-3rCnh5c4",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": " {\n        \"name\": \"Zeo Zeo\",\n        \"phoneNo\": \"0957190998\",\n        \"maxVoucherLimit\": 6\n }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/customers",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"customers"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Evoucher",
+			"item": [
+				{
+					"name": "get All Evouchers",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJaYXcgTXlvIE9vIiwiaWF0IjoxNjg1OTAzMzMzLCJleHAiOjE2ODU5ODk3MzN9.0MAN6-OR626SWhmhYPlwgoyD4SQE0pJz7EtAve4_If07HLpc1dn1ev1Sk37UBK_a9BjN-Tk-zkrjD6B9xShWTA",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/evouchers",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"evouchers"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create New Evoucher",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJaYXcgTXlvIE9vIiwiaWF0IjoxNjg1OTAzMzMzLCJleHAiOjE2ODU5ODk3MzN9.0MAN6-OR626SWhmhYPlwgoyD4SQE0pJz7EtAve4_If07HLpc1dn1ev1Sk37UBK_a9BjN-Tk-zkrjD6B9xShWTA",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": " {\n        \"title\": \"Diamond Customer EVoucher\",\n        \"expireDate\": \"2023-07-29T17:30:00.000+00:00\",\n        \"image\": \"https://res.cloudinary.com/demo/image/upload/v1312461204/sample.jpg\",\n        \"amount\": 20,\n        \"qty\": 50,\n        \"returnAmount\": 0.2,\n        \"description\": \"For Diamond Customer EVoucher\",\n        \"createdDate\": \"2022-12-12\"\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/evouchers",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"evouchers"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Evoucher By Id",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJtaW5fbXlhdF9oZWluIiwiaWF0IjoxNjg1ODc0NzU2LCJleHAiOjE2ODU5NjExNTZ9.PbsKnRA6w4gXmJUDAvE5u8M0Ajmke6BHoxLXnkk6V_c",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/evouchers/find/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"evouchers",
+								"find",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update Evoucher By Id",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJaYXcgTXlvIE9vIiwiaWF0IjoxNjg1OTAzMzMzLCJleHAiOjE2ODU5ODk3MzN9.0MAN6-OR626SWhmhYPlwgoyD4SQE0pJz7EtAve4_If07HLpc1dn1ev1Sk37UBK_a9BjN-Tk-zkrjD6B9xShWTA",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{          \n    \"evoucherId\": 2,\n    \"title\": \"Gold Customer EVoucher\",\n    \"expireDate\": \"2023-07-29T17:30:00.000+00:00\",\n    \"image\": \"https://www.infogrepper.com/wp-content/uploads/2022/10/image-url-for-testing.png\",\n    \"amount\": 10.0,\n    \"qty\": 100,\n    \"returnAmount\": 0.2,\n    \"description\": \"For Gold Customer EVoucher\",\n    \"createdDate\": \"2023-06-05\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/evouchers/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"evouchers",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Evoucher By Id",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJtaW5fbXlhdF9oZWluIiwiaWF0IjoxNjg1ODc0NzU2LCJleHAiOjE2ODU5NjExNTZ9.PbsKnRA6w4gXmJUDAvE5u8M0Ajmke6BHoxLXnkk6V_c",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/evouchers/3",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"evouchers",
+								"3"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Evoucher Purchase",
+			"item": [
+				{
+					"name": "Get All purchase histories",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJtaW5fbXlhdF9oZWluIiwiaWF0IjoxNjg1ODc0NzU2LCJleHAiOjE2ODU5NjExNTZ9.PbsKnRA6w4gXmJUDAvE5u8M0Ajmke6BHoxLXnkk6V_c",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/purchaseHistories",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"purchaseHistories"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create purchase histories",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJtaW5fbXlhdF9oZWluIiwiaWF0IjoxNjg1ODc0NzU2LCJleHAiOjE2ODU5NjExNTZ9.PbsKnRA6w4gXmJUDAvE5u8M0Ajmke6BHoxLXnkk6V_c",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": " {\n        \"phoneNo\": \"0957190998\",\n        \"customerName\": \"Zoe Lay\",\n        \"paymentMethodName\": \"VISA\",\n        \"orderAmount\": 75600\n       \n }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/purchaseHistories",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"purchaseHistories"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "System User",
+			"item": [
+				{
+					"name": "Sign Up User",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": " { \r\n     \"username\" : \"Zaw Myo Oo\", \r\n     \"email\" : \"zawmyoo5565@gmail.com\", \r\n     \"password\" : \"password123456\", \r\n     \"role\" : [\"admin\"]\r\n     \r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/auth/signup",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"auth",
+								"signup"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Sign In User",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n     \"username\" : \"Zaw Myo Oo\",\r\n     \"password\" : \"password123456\"\r\n\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/auth/signin",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"auth",
+								"signin"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get All User",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJaYXcgTXlvIE9vIiwiaWF0IjoxNjg1OTAyOTQyLCJleHAiOjE2ODU5ODkzNDJ9.6D9SlZ3YqDeH7XTa-zSc0o4Uj88HQCcgT7AqmJdgrKWM4UiYl0hY397xM4zIOWhorZRIOiishkyUWOM7CN54Nw",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/users",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"users"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Logout User",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJaYXcgTXlvIE9vIiwiaWF0IjoxNjg1OTAyOTQyLCJleHAiOjE2ODU5ODkzNDJ9.6D9SlZ3YqDeH7XTa-zSc0o4Uj88HQCcgT7AqmJdgrKWM4UiYl0hY397xM4zIOWhorZRIOiishkyUWOM7CN54Nw",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/auth/signout",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"auth",
+								"signout"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Refresh Access Token",
+			"item": [
+				{
+					"name": "Refresh Access Token",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJaYXcgTXlvIE9vIiwiaWF0IjoxNjg1OTAyNzczLCJleHAiOjE2ODU5ODkxNzN9.cm4W-hnxgPdCwa5uArBJ3IK5RsvGQjOPvoQY5t0XTbz6M5AW2RRxpPDn0hDES6W6Jb8JUUPbQVchWN63Yyjqsw",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"refreshToken\":\"7313b03f-8b01-4a87-a6ee-da50fd2722da\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/auth/refreshtoken",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"auth",
+								"refreshtoken"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
