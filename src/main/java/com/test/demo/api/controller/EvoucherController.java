@@ -65,7 +65,7 @@ public class EvoucherController {
 		existingEvoucher.setAmount(evoucher.getAmount());
 		existingEvoucher.setCreatedDate(new Date());
 		existingEvoucher.setDescription(evoucher.getDescription());
-		existingEvoucher.setImage(null);
+		existingEvoucher.setImage(evoucher.getImage());
 		existingEvoucher.setQty(evoucher.getQty());
 		
 		res.setBody(evoucherServic.updateEvoucher(existingEvoucher));
